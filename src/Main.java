@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class Main {
@@ -31,15 +29,15 @@ public class Main {
             float r =(float) Math.sqrt(-delta);
             float real= -b/2*a;
             float im=r/2*a;
-            System.out.println("les solutions de l'equation "+ a +"x^2"+ b +"x"+ c+" sont :" + real +" +i"+im +" et"+  real +" -i"+im);
+            System.out.println("les solutions de l'équation "+ a +"x^2"+ b +"x"+ c+" sont :" + real +" +i"+im +" et"+  real +" -i"+im);
 
         } else if (delta==0) {
             float solution = -b/2*a;
-            System.out.println("la solution de l'equation "+ a +"x^2"+ b +"x"+ c+" est :" + solution);
+            System.out.println("la solution de l'équation "+ a +"x^2"+ b +"x"+ c+" est :" + solution);
         }else {
             float solution1=(float) (-b+Math.sqrt(delta))/2*a;
             float solution2=(float) (-b-Math.sqrt(delta))/2*a;
-            System.out.println("les solutions de l'equation "+ a +"x^2"+ b +"x"+ c+" sont :" + solution1 +" et"+ solution2);
+            System.out.println("les solutions de l'équation "+ a +"x^2"+ b +"x"+ c+" sont :" + solution1 +" et"+ solution2);
         }
 
     }
@@ -49,25 +47,25 @@ public class Main {
         float a = scanner.nextInt();
         int r= (int) (a % 2);
         if(r==0){
-            System.out.println("Le nombre"+a+" est paire ");
+            System.out.println("Le nombre" +a+ " est paire ");
         }else{
-            System.out.println("Le nombre"+a+" est impaire ");
+            System.out.println("Le nombre" +a+ " est impaire ");
         }
 
     }
-    public static void max(){
+    public static void max (){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Veuillez saisir un nombre");
         float a = scanner.nextFloat();
         System.out.println("Veuillez saisir un autre  nombre");
         float b = scanner.nextFloat();
-        float c=a-b;
-        if (c<0){
-            System.out.println("le maximum entre "+a+" et "+b+" est "+b);
-        } else if (c==0) {
-            System.out.println("les nombres "+a+" et "+b+" sont egaux");
+        float c = a-b;
+        if (c < 0){
+            System.out.println("le maximum entre " +a+ " et " +b+ " est " +b);
+        } else if (c == 0) {
+            System.out.println("les nombres " +a+ " et " +b+ " sont egaux");
         }else{
-            System.out.println("le maximum entre "+a+" et "+b+" est "+a);
+            System.out.println("le maximum entre " +a+ " et " +b+ " est " +a);
         }
     }
     public static void min(){
@@ -76,13 +74,13 @@ public class Main {
         float a = scanner.nextFloat();
         System.out.println("Veuillez saisir un autre  nombre");
         float b = scanner.nextFloat();
-        float c=a-b;
-        if (c<0){
-            System.out.println("le minimum entre "+a+" et "+b+" est "+a);
-        } else if (c==0) {
-            System.out.println("les nombres "+a+" et "+b+" sont egaux");
+        float c = a-b;
+        if (c < 0){
+            System.out.println("le minimum entre " +a+ " et " +b+ " est  " +a);
+        } else if ( c==0 )  {
+            System.out.println("les nombres " +a+ " et " +b+ " sont egaux");
         }else{
-            System.out.println("le minimum entre "+a+" et "+b+" est "+b);
+            System.out.println("le minimum entre " +a+ " et " +b+ " est " +b);
         }
     }
 
@@ -91,13 +89,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Veuillez saisir une phrase");
         String a = scanner.next();
-        System.out.println("Veuillez saisir une autre phrase phrase");
+        System.out.println("Veuillez saisir une autre phrase");
         String b = scanner.next();
         if (a.equals(b)){
-            System.out.println("ces chaine de charactere sont identique");
+            System.out.println("ces chaines de charactères sont identiques");
         }
         else{
-            System.out.println("ces chaine de charactere sont differente");
+            System.out.println("ces chaines de charactères sont differentes");
         }
     }
 
@@ -115,10 +113,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Saisir un entier positif ou nul");
         int n = scanner.nextInt();
-        int i=0;
-        int w=0;
-        while(i<=n){
-            int c=n-i;
+        int i = 0;
+        int w = 0;
+        while(i <= n){
+            int c = n-i;
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -133,8 +131,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Veuillez saisir un nombre");
         float a = scanner.nextFloat();
-        float c=a*a;
-        System.out.println("le carre de votre nombre "+a+" est "+c);
+        float c = a*a;
+        System.out.println("le carre de votre nombre " +a+ " est "+c);
 
     }
     public static void tabledemultiplication(){
@@ -167,8 +165,8 @@ public class Main {
             System.out.print("longueur:");
             l = scanner.nextInt();
         }
-        for(int i=0;i<=l;i++){
-            int t =i%10;
+        for(int i = 0;i<=l;i++){
+            int t = i%10;
             if(t==0){
                 System.out.print("|");
             }else{
@@ -182,13 +180,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Saisir un entier positif non  nul");
         int n = scanner.nextInt();
-        while (n<=0){
+        while (n <= 0){
             System.out.print("Saisir un entier positif non  nul");
             n = scanner.nextInt();
         }
         int reste;
         boolean flag = true;
-        for(int i=2; i <= n/2; i++)
+        for(int i = 2; i <= n/2; i++)
         {
             reste = n%i;
             if(reste == 0)
@@ -253,7 +251,7 @@ public class Main {
                 int paire = i % 2;
                 if (paire == 0) {
                     tableaupaire[count] = tableau[i];
-                    System.out.println(" la valeur max de ce tableau est : "+i);
+                    System.out.println(" la valeur max de ce tableau est " +i);
                     count=count+1;
 
                 }
@@ -261,9 +259,9 @@ public class Main {
 
         }
 
-        System.out.println(" la valeur max de ce tableau est : "+max);
-        System.out.println(" la valeur min de ce tableau est : "+min);
-        System.out.println(" la somme des valeurs de ce tableau est : "+somme);
+        System.out.println(" la valeur max de ce tableau est : " +max);
+        System.out.println(" la valeur min de ce tableau est : " +min);
+        System.out.println(" la somme des valeurs de ce tableau est : " +somme);
         System.out.print(" les nombre paire de votre tableau sont : ");
         for (int i = 0; i <tableaupaire.length; i++) {
             System.out.print(tableaupaire[i] + ",\t");
